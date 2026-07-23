@@ -1,0 +1,16 @@
+curl -fsSL https://openrouter.ai/labs/spawn/cli/install.sh | bash---
+
+name: ¨Hermes
+description:
+---
+
+# My Agent hermes
+
+Describe what your agent does here.
+it lives everywhere, CLI — and a growing list of platforms. One agent, one memory, every surface.
+
+#2 Remember
+
+Persistent Memory
+It learns your projects, auto-generates skills, and never forgets how it solved a problem.
+AUtomation and agent manager for productive usage and best outcome
