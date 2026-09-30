@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Store Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Lock screen: private single-user access -->
+  <section id="lock" class="lock">
+    <div class="clay lock-card">
+      <div class="logo">🛍️</div>
+      <h1>Store Builder</h1>
+      <p id="lock-msg" class="muted">Enter your passcode to unlock.</p>
+      <form id="lock-form">
+        <input id="lock-pass" type="password" inputmode="numeric" autocomplete="current-password" placeholder="Passcode" required minlength="4">
+        <input id="lock-pass2" type="password" inputmode="numeric" autocomplete="new-password" placeholder="Repeat passcode" minlength="4" hidden>
+        <button class="btn primary" type="submit" id="lock-btn">Unlock</button>
+      </form>
+      <p id="lock-err" class="error"></p>
+      <button id="lock-reset" class="btn link" type="button">Forgot passcode? Wipe local data</button>
+    </div>
+  </section>
+
+  <!-- Main app -->
+  <div id="app" class="app" hidden>
+    <header class="topbar">
+      <div class="brand">🛍️ <span>Store Builder</span></div>
+      <div class="readiness" title="Store readiness">
+        <div class="bar"><div id="ready-fill"></div></div>
+        <span id="ready-label">0%</span>
+      </div>
+      <div class="top-actions">
+        <button class="btn ghost small" data-tab="settings" aria-label="Settings">⚙️</button>
+        <button class="btn ghost small" id="lock-now" aria-label="Lock">🔒</button>
+      </div>
+    </header>
+
+    <nav class="tabs" id="tabs">
+      <button data-tab="niche" class="tab active"><span class="dot"></span>1 · Niche</button>
+      <button data-tab="architect" class="tab"><span class="dot"></span>2 · Layout</button>
+      <button data-tab="products" class="tab"><span class="dot"></span>3 · Products</button>
+      <button data-tab="auditor" class="tab"><span class="dot"></span>4 · Auditor</button>
+      <button data-tab="ads" class="tab"><span class="dot"></span>5 · Ads</button>
+    </nav>
+
+    <main id="view" class="view"></main>
+    <div id="toast" class="toast" hidden></div>
+  </div>
+
+  <script src="js/vault.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/modules.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
