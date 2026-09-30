@@ -48,7 +48,7 @@ p { margin: .25rem 0 .75rem; }
 }
 .btn:active { transform: scale(.97); box-shadow: var(--shadow-in); }
 .btn:disabled { opacity: .55; cursor: wait; }
-.btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; }
+.btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--ink); }
 .btn.ghost { box-shadow: none; background: transparent; }
 .btn.small { padding: .4rem .8rem; font-size: .9rem; }
 .btn.link { box-shadow: none; background: none; color: var(--muted); font-weight: 600; text-decoration: underline; }
@@ -97,7 +97,7 @@ label { display: block; font-weight: 700; font-size: .9rem; margin-bottom: .3rem
 }
 .tab .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
 .tab.done .dot { background: var(--ok); }
-.tab.active { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; }
+.tab.active { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--ink); }
 .tab.active .dot { background: #fff; }
 
 .view { display: grid; gap: 1rem; }
@@ -106,7 +106,7 @@ label { display: block; font-weight: 700; font-size: .9rem; margin-bottom: .3rem
 .row.between { justify-content: space-between; }
 .pill { display: inline-block; padding: .15rem .6rem; border-radius: 999px; font-size: .8rem; font-weight: 700;
   background: var(--bg); box-shadow: var(--shadow-in); }
-.pill.accent { background: var(--accent); color: #fff; box-shadow: none; }
+.pill.accent { background: var(--accent); color: var(--ink); box-shadow: none; }
 .pill.ok { background: var(--ok); color: #fff; box-shadow: none; }
 .pill.warn { background: var(--warn); color: #fff; box-shadow: none; }
 .score { font-size: 1.6rem; font-weight: 800; color: var(--accent); }
